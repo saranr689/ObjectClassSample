@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.lakeba.objectclasssample.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name1"
+        android:id="@+id/name1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name2"
+        android:id="@+id/name2"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/name1"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="naame3"
+        android:layout_below="@+id/name2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="21dp"
+        android:id="@+id/name3" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="w_Name1"
+        android:layout_below="@+id/with_hasmap"
+        android:layout_marginTop="15dp"
+        android:id="@+id/w_Name1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="w_name2"
+        android:layout_below="@+id/w_Name1"
+        android:layout_marginTop="15dp"
+        android:id="@+id/w_Name2"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="w_Name3"
+        android:layout_marginTop="21dp"
+        android:id="@+id/stu2_age"
+        android:layout_below="@+id/w_Name2"
+        android:layout_alignStart="@+id/w_Name2" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="w/o hashcode"
+        android:layout_marginTop="28dp"
+        android:id="@+id/wo_hashcode"
+        android:layout_below="@+id/name3"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="with_hashcode"
+        android:id="@+id/w_hashcode"
+        android:layout_alignTop="@+id/wo_hashcode"
+        android:layout_toEndOf="@+id/wo_hashcode"
+        android:layout_marginStart="19dp" />
+</RelativeLayout>

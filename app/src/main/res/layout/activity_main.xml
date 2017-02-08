@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.lakeba.objectclasssample.MainActivity">
+
+    <Button
+        android:text="CLONE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="37dp"
+        android:id="@+id/clone" />
+
+    <Button
+        android:text="getClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clone"
+        android:layout_alignEnd="@+id/clone"
+        android:layout_marginTop="35dp"
+        android:id="@+id/get_class" />
+
+    <Button
+        android:text="equals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/get_class"
+        android:layout_toEndOf="@+id/clone"
+        android:layout_marginStart="45dp"
+        android:id="@+id/equals" />
+
+    <Button
+        android:text="notify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/get_class"
+        android:layout_alignStart="@+id/equals"
+        android:id="@+id/notify" />
+
+    <Button
+        android:text="hashCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/equals"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/hashcode" />
+
+    <Button
+        android:text="notifyAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/notify"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/notifyall" />
+
+    <Button
+        android:text="toString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/get_class"
+        android:id="@+id/tostring" />
+
+    <Button
+        android:text="wait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tostring"
+        android:layout_alignStart="@+id/notify"
+        android:id="@+id/wait" />
+
+
+    <Button
+        android:text="finalize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/finalize"
+        android:layout_alignBaseline="@+id/wait"
+        android:layout_alignBottom="@+id/wait"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OBJECT CLASS"
+        android:id="@+id/textView"
+        android:textSize="18sp"
+        android:textColor="#de0d0d"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
